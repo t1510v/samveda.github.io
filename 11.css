@@ -1,0 +1,112 @@
+#out-cont
+{
+    box-sizing: border-box;
+    width: 100vw;
+    height:100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-areas:
+    "header"
+    "body"
+    "footer";
+    gap:1%;
+    margin: 1%;
+    padding: 1%;
+    background-image: linear-gradient(to right,rgba(220, 246, 245, 0.715),white);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#header
+{
+    grid-area: header;
+    background-color: rgb(210, 235, 246);
+    text-align: center;
+}
+
+#body
+{
+    grid-area: body;
+    /*background-color: rgb(214, 241, 246);*/
+    display: grid;
+    grid-template-columns: 0.75fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "courses About"
+    "faculty About"
+    "placements About"
+    "clubs About"
+    "ourmission About" 
+    "login About";
+}
+
+.box
+{
+    background-color: snow;
+    border-radius:5%;
+    gap:0.1%;
+    margin:0.1%;
+    text-align: center;
+    padding: 5%;
+    font-weight: bolder;
+    border: solid 2px gainsboro;
+    cursor: pointer;
+}
+
+#courses
+{
+    grid-area: courses;
+}
+
+#faculty
+{
+    grid-area: faculty;
+}
+
+#placements
+{
+    grid-area:placements;
+}
+
+#clubs
+{
+    grid-area:clubs;
+}
+
+#ourmission
+{
+    grid-area:ourmission;
+}
+
+#login
+{
+    grid-area:login;
+}
+
+.box:hover
+{
+    background-color: rgba(132, 196, 236, 0.336);
+    border-color:black;
+}
+
+#about
+{
+    grid-area:About;
+    text-align: center;
+    margin:1%;
+    padding:1%;
+}
+
+#ps
+{
+    padding:1%;
+}
+
+#footer
+{
+    grid-area: footer;
+    background-color: rgba(220, 246, 245, 0.715);
+}
+
+

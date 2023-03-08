@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Login to Samveda</title>
+
+        <style>
+            #out-cont
+            {
+                box-sizing: border-box;
+                width:100vw;
+                height:100vh;
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows:1fr;
+                grid-template-areas:
+                "student-login faculty-login";
+                margin:1%;
+                padding:10%;
+                background-image:linear-gradient(to right, rgba(220, 246, 245, 0.715),rgb(212, 230, 247));
+                background-size: cover;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            #student-login
+            {
+                grid-area: student-login;
+                margin:2%;
+            }
+
+            #faculty-login
+            {
+                grid-area:faculty-login;
+                margin:2%;
+            }
+
+            .box
+            {
+                background-color: white;
+                border-radius: 5%;
+                padding-left:10%;
+                padding-top:3%;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div id="out-cont">
+            <div id="student-login" class="box">
+                <form name="f1">
+                    <h2>STUDENT LOGIN</h2>
+                    <br>
+                    <label for="stdid">Student-ID</label>
+                    <br>
+                    <input type="text" id="stdid" name="stdid">
+                    <br>
+                    <br>
+                    <label for="password1">Password</label>
+                    <br>
+                    <input type="password" id="password1" name="password1">
+                    <br>
+                    <br>
+                    <input type="submit" id="btn1" class="btn">
+                </form>
+            </div>
+            <div id="faculty-login" class="box">
+                <form name="f2">
+                    <h2>FACULTY LOGIN</h2>
+                    <br>
+                    <label for="facid">Faculty-ID</label>
+                    <br>
+                    <input type="text" id="facid" name="facid">
+                    <br>
+                    <br>
+                    <label for="password2">Password</label>
+                    <br>
+                    <input type="password" id="password2" name="password2">
+                    <br>
+                    <br>
+                    <input type="submit" id="btn2" class="btn">
+                </form>
+            </div>
+        </div>
+    </body>
+    
+</html>
